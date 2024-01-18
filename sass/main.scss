@@ -1,6 +1,7 @@
 @use './base';
 @use './layouts';
 @use './components';
+
 html {
     scroll-behavior: smooth;
 }
@@ -30,4 +31,69 @@ body {
     border-radius: 10px;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
 
+}
+
+@media (width < 900px) {
+
+}
+
+@media (width <= 600px) {
+    header {
+        // background-color: base.$primary-color;
+        background: linear-gradient(to bottom,
+                #0F1035 0%,
+                #0F1035 50%,
+                #365486 50%,
+                #365486 100%);
+    }
+
+    .header__section {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+@media (width <= 500px) {
+    header {
+        // background-color: base.$primary-color;
+        background: linear-gradient(to bottom,
+                #0F1035 0%,
+                #0F1035 60%,
+                #365486 60%,
+                #365486 100%);
+    }
+}
+
+
+@media (width <= 530px) {
+    header {
+        // background-color: base.$primary-color;
+        background: linear-gradient(to bottom,
+                #0F1035 0%,
+                #0F1035 52%,
+                #365486 52%,
+                #365486 100%);
+    }
+}
+
+@media (width <= 500px) {
+    header {
+        // background-color: base.$primary-color;
+        background: linear-gradient(to bottom,
+                #0F1035 0%,
+                #0F1035 60%,
+                #365486 60%,
+                #365486 100%);
+    }
+}
+
+@media (width <= 398px) {
+    header {
+        // background-color: base.$primary-color;
+        background: linear-gradient(to bottom,
+                #0F1035 0%,
+                #0F1035 70%,
+                #365486 70%,
+                #365486 100%);
+    }
 }
